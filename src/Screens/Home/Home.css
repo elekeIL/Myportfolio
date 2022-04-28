@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;700&family=Monoton&family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap');
+
+
+.home_container {
+  font-family: 'Monserrat', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+  background-color: #003B00;
+  background: url();
+  padding: 10rem;
+  text-align: center;
+  line-height: 10rem;
+}
+
+.home_container h1 {
+  font-family: 'Monoton', 'Heebo';
+  color: #e5c06fa9;
+  font-size: 6em;
+  margin-bottom: 3rem;
+
+}
+
+.home_container h2{
+  text-transform: capitalize;
+  font-size: 3em;
+}
+
+.home_container p{
+  font-family: 'Ubuntu', 'Heebo';
+  font-size: 1.2em;
+}
+
+
+
+.dym_txt{
+  font-family:'Ubuntu', 'Verdana';
+  font-size: 2rem;
+}
+
+.home_container p{
+  font-size: 1.2rem;
+  line-height: 5rem;
+}
+
+.btn-primary{
+  padding: 1rem;
+  background-color: #000;
+  width: 12rem;
+  color: #fff;
+  border-radius: 1.7rem;
+  font-size: 1.2em;
+  font-family: 'Monserrat', 'Heebo';
+  text-decoration: none;
+  border-color: #fff;
+}
+
+.btn-primary:hover{
+background-color: #fff;
+border-color: #000;
+}
+
+.Main_page_link{
+  color: #fff;
+  text-decoration: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+  box-shadow: rgba(167, 102, 102, 0.25);
+
+}
+
+.Main_page_link:hover{
+  color: #000;
+}

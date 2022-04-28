@@ -2,6 +2,7 @@ import React from 'react'
 import './NavigationBar.css'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import CloseButton from 'react-bootstrap/CloseButton'
 import { navigationLinks } from '../../Helpers/navigationLinks'
 
 function createLinks () {
@@ -18,7 +19,7 @@ function NavigationBar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse style= {{justifyContent: 'flex-end', marginRight: '1rem', borderColor: 'none'}} id="basic-navbar-nav">
       <Nav style={{margin: '0 1rem'}} className= 'Links'>
-          {createLinks()}
+        {createLinks()}
       </Nav>
       </Navbar.Collapse>
       </Navbar>

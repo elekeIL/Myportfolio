@@ -16,7 +16,7 @@ function Portfolio() {
       <Modal
       show={modalShow}
       onHide= { () => setModalShow(false)}
-      size = 'lg'
+      size = 'md'
       arial-labelledby ='contained-modal-title-vcenter'
       centered
 

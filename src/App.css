@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;700&family=Monoton&family=Montserrat:wght@100;400;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,600;1,500;1,600&family=Ubuntu:wght@300;400;700&display=swap');
+
+
 :root{
 --nav-color: hsl(210,11%,15%);
 --nav-color-hover: hsl(210,11%,45%);
@@ -5,4 +8,8 @@
 --light-color: hsl(209,10%,92%);
 --font-color: hsl(0,0,100%);
 --font-color-hover: hsl(0,0%,40%);
+}
+
+.App{
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
