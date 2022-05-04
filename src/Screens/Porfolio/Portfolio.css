@@ -1,10 +1,32 @@
-.portfolio {
-background-color: aqua;
+.portfolio_main_container {
+    background-color: var(--light-color);
+    overflow: hidden;
 }
 
 .portfolio_main_container h1 , .portfolio_main_container p {
-text-align: center;
-margin-top: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.portfolio_contanier{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: var(--light-color);
+}
+
+.emoji{
+    flex: 0 0 40%;
+    max-width: 45%;
+}
+
+#portfolio_card_container{
+    background-color: var(--light-color);
+}
+
+
+.portfolio_heading{
+    padding-top: 60px;
+    font-weight: 600;
 }
 
 .portfolio_image:hover{
@@ -43,16 +65,21 @@ margin-top: 3rem;
 
 @media only screen and (max-width: 600px){
     #portfolio_card_container{
-        width:100%;
+        width: 100%;
         padding: 0.5rem 2.5rem;
         border: none;
     }
+    .emoji{
+        flex: 0 0 40%;
+        max-width: 45%;
+    }
+
 }
 
 @media (min-width: 601px) and (max-width: 1400px){
     #portfolio_card_container{
-        width:50%;
         padding: 0.5rem 2.5rem;
         border: none;
     }
+
 }

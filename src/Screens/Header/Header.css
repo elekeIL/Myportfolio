@@ -1,14 +1,204 @@
-.header_container{
-    padding: 8rem 4rem 8rem 4rem;
-    color: #fff;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.po_container{
+    background-color: var(--light-color);
+    overflow: hidden;
+    padding-top: 100px;
+    min-height: 100vh;
 }
+
+.effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+
+.effect-2{
+    left: 3%;
+    bottom: 20%;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.effect-2 div{
+    height: 3px;
+    width: 3px;
+    background-color: brown;
+    margin: 0 3px 8px
+}
+
+.po_container .welcome_text{
+    line-height: 15px;
+}
+.po_container .welcome_text p{
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.po_container .welcome-info .more-info, .po_container .welcome-info .get-offer{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 220px 30px;
+    text-align: center;
+}
+
+.po_container .welcome-info .more-info p{
+    text-align: left;
+}
+
+.po_container .welcome-info .get-offer p{
+    text-align: left;
+}
+
+.po_container .welcome-info .more-info Button{
+    background-color: #15744c;
+    color: #ffffff;
+}
+
+.po_container .welcome-info .get-offer Button{
+    background-color: #15744c;
+    color: #ffffff;
+}
+
+.po_container .welcome_text h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    padding: 15px;
+    margin: 0;
+
+}
+ .po_container .welcome-img, .po_container .welcome-info{
+   flex: 0 0 50%;
+   max-width: 50%; 
+   padding: 50px 15px;
+}
+
+.po_container .welcome-info{
+    background-color: var(--light-color);
+    padding-top: 9rem;
+}
+
+.po_container .welcome-img .welcome-box{
+    background-color: var(--light-color);
+    max-width: 450px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    padding: 15px
+}
+
+.po_container .welcome-img .welcome-box img{
+    width: 130%;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+
 
 .heading{
     font-size: 5rem;
     text-shadow: 2px 2px #000;
     margin-bottom: 10rem;
+    font-weight: 1000;
+}
+
+.po_container .service-heading h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    color: #000;
+    padding-top: 30px;
+}
+
+
+.service-containment{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-containment .service-box{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background-color: #51466e;
+    border-radius: 20px;
+    overflow-wrap: normal;
+}
+
+.service-containment .service-box h2{
+    font-size: 20px;
+    visibility: hidden;
+    color: #ffffff;
+    padding: 0;
+}
+.service-containment .service-box p{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    visibility: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.service-containment .service-box:hover p{
+    visibility: visible;
+}
+.service-containment .service-box:hover h2{
+    visibility: visible;
+}
+
+.service-containment .service-box .icon{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: red;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    transition-delay: 0.25s;
+
+}
+
+.service-containment .service-box:hover .icon{
+    top: 30px;
+    left: calc(50% ,-40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    transition-delay: 0s;
+
+}
+
+.service-containment .service-box .content{
+    padding: 1px 20px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.3s;
+    transition-delay: 0s;
+
+
+}
+
+
+.service-containment .service-box:hover .content{
+    transform: scale(1);
+    transition-delay: 0.25s;
 }

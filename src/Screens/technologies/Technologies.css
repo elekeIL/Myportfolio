@@ -1,44 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;700&family=Monoton&family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap');
+
+
+
+
+#technologies{
+    background-color:var(--light-color);
+    padding: 80px 0 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
 .technologies_container{
     background-color:var(--light-color);
     color: var(--nav-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
 
 }
+
+
+.technologies_container .heading h1{
+    font-weight: 500;
+    word-wrap: break-word;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 30px 0 0;
+    font-family: 'Monoton' sans-serif;
+
+}
+
+h2{
+    text-align: left;
+    left: 30%;
+    justify-content: left;
+    color: #15744c
+}
+
 .tech_cards_container{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1100px;
-    margin: 1rem 0;
+    margin: 16px 0 32px;
+    padding-bottom: 50px;
 
 }
 .techcard{
     width: 15rem;
     height: 10rem;
     background-color: var(--font-color);
+    color: #15744c;
     margin: 10px;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
     border-bottom: 5px solid var(--nav-color);
-    transition: all 0.1s
+    transition: all 0.3s ease;
 
 }
 
 .tech_icon{
     height: 70px;
-    background-color: var(--light-color);
+    background-color:  #15744c ;
+    color: #15744c;
     border-radius: 50%;
 
 }
 
 .techcard:hover {
-    background-color: var(--font-color-hover);
+    background-color: #15744c;
     transform: scale(1.05);
+    color: #ffffff;
+    animation: rotate 1.2s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    50% { transform: rotateX(0deg) rotateY(180deg); }
+    100% { transform: rotateX(0deg) rotateY(360deg);}
 }

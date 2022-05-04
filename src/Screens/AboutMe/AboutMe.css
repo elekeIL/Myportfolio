@@ -1,34 +1,308 @@
 .about_container{
-    margin: 3rem 0;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding: 80px 0 0;
+    min-height: 100vh;
+}
+
+.about{
+    background-color: white;
+    padding-top: 60px;
+}
+
+
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
     text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section-title h2::before{
+    content: attr(data-heading);
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: pink
+}
+
+.outer-shadow{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+    box-shadow: 50% black;
+}
+
+.about_container .about-img{
+flex: 0 0 40%;
+padding: 0 15px;
+max-width: 40%;
+}
+
+.about_container .about-img .img-box{
+    padding: 15px;
+}
+
+.about_container .about-img .img-box img{
+    width: 100%;
+    border: 10px solid transparent;
+    border-radius: 5px;
+}
+
+.about_container .about-img .social-links{
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f1f1f1
+}
+
+.about_container .about-img .social-links a{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 30%;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: #f1f1f1;
+    box-shadow: 0 5px 15px -5px #00000070;
+    position: relative;
+}
+
+.about_container .about-img .social-links a:hover{
+    background-color: blue;
+}
+
+#Icon{
+    line-height: 70px;
+    font-size: 50px;
+    transition: all 0.2s
+}
+
+#Icon:hover{
+transform: scale(1.3);
+color: #f1f1f1;
+}
+
+#Icon::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: blue;
+    left: -110%;
+    top: 90%
+}
+
+.about_container .about-info{
+flex: 0 0 60%;
+padding: 0 15px;
+max-width: 60%;
+text-align: left;
+}
+
+.about_container .about-info p{
+font-size: 16px;
+line-height: 26px;
+margin-bottom: 15px;
+color: grey;
+}
+
+.about_container .about-info span{
+font-weight: 600;
+}
+
+.about_container .about-info a{
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: blue;
+}
+
+.about_container .about-info a:hover{
+    color: #f1f1f1;
+}
+
+#btn-resume{
+    margin: 30px 20px 0 0;
+    text-decoration: none;
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 40%;
+    transition: all 0.5s;
+}
+
+#btn-resume:hover{
+    background-color: blue;
+    animation: shake 0.3s linear 1;
+}
+
+@keyframes shake{
+    33% { transform: rotate(10deg)};
+    66% { transform: rotate(-10deg)};
+    100% { transform: rotate(10deg)};
+}
+
+
+.about_container .about-tabs{
+    padding: 60px 15px 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.about_container .about-tabs .tab-item{
+    display: inline-block;
+    margin: 0 5px 10px;
+    cursor: pointer;
+    border: 1px solid red;
+    padding: 5px 10px; 
+    border-radius: 30%;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: grey;
+    font-weight: 500;
+    text-transform: capitalize;
+    
+}
+.about_container .tab-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: none;
+}
+
+.about_container .tab-content.active{
+    display: block;
+}
+.about_container .about-tabs .tab-item:hover:not(.active){
+    opacity: 0.7;
+}
+
+.about_container .about-tabs .tab-item.active{
+color: pink;
+}
+
+.about_container .experience{
+    padding-bottom: 80px;
+    
+}
+
+.about_container .education{
 
 }
-.about_container img{
+
+.about_container .timeline{
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.about_container .timeline::before{
+    content: '';
+    width: 10px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: black;
+    position: absolute;
+}
+
+.about_container .timeline .timeline-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    justify-content: center;
+    color: grey
+}
+
+.about_container .timeline .timeline-item:nth-child(odd){
+    padding-right: calc(50% + 50px);
+    text-align: right;
+}
+.about_container .timeline .timeline-item:nth-child(even){
+    padding-left: calc(50% + 50px);
+}
+.about_container .timeline .timeline-item-inner{
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.about_container .timeline .timeline-item-inner::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: red;
+    top: 37px;
+    z-index: -1;
+}
+.about_container .timeline .timeline-item:nth-child(odd) .timeline-item-inner::before{
+right: -30px;
+}
+.about_container .timeline .timeline-item:nth-child(even) .timeline-item-inner::before{
+left: -30px;
+}
+/* .about_container .timeline .timeline-item-inner .icon{
+    height: 40px;
+    width: 40px;
+    background-color: grey;
+    text-align: center;
+    border: 1px solid white;
+    line-height: 40px;
     border-radius: 50%;
-    border: 0.5px solid rgb(218,218,218);
-    margin: 1rem;
+    color: pink;
+    font-size: 16px;
+    position: absolute;
+    top: 18px;
+} */
+
+.about_container .timeline .timeline-item:nth-child(odd) .icon{
+    right: -70px;
 }
 
-.about_text{
- max-width: 600px;
-
+.about_container .timeline .timeline-item:nth-child(even) .icon{
+    left: -70px
 }
 
-
-@media only screen and (max-width: 900px){
-    .about_container{
-        flex-direction: column;
-    }
+.about_container .timeline .timeline-item-inner span{
+font-weight: 500;
+color: pink;
+display: block;
+margin: 0 0 10px;
+text-transform: capitalize;
 }
 
+.about_container .timeline .timeline-item-inner h3{
+font-size: 20px;
+color: grey;
+font-weight: 600;
+margin: 0 0 5px;
+text-transform: capitalize;
+}
 
-@media only screen and (max-width: 700px){
-    .about_text{
-       max-width: 300px;
-       text-align: center
-    }
+.about_container .timeline .timeline-item-inner h4{
+font-size: 16px;
+font-style: italic;
+color: grey;
+margin: 0;
+}
+
+.about_container .timeline .timeline-item-inner p{
+    font-size: 16px;
+    color: grey;
+    line-height: 26px;
+    margin: 15px 0 0;
 }

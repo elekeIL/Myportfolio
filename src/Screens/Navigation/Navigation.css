@@ -1,18 +1,26 @@
-.container{
-    background-color:#000;
+
+.navigation_container{
+    background-color:#15744c;
     color: white;
     padding: 10px auto 10px auto ; 
     text-align: center;
 }
 .navbar-light .navbar-nav .nav-link{
     color: var(--font-color) !important;
-    display: block;
     padding: 15px 30px;
+    display: block;
     text-transform: uppercase;
     font-weight: bold;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
+.navbar-light .navbar-nav .nav-link a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1
+}
 
 .navbar-light .navbar-brand{
     color: #fff !important;
@@ -27,4 +35,12 @@
     background-color: var(--font-color-hover);
     border-radius: 2rem;
     border: 1rem 1rem 1rem 1rem;
+}
+
+.Links a:hover::after{
+    -webkit-animation: circle 1.5s ease-in forwards;
+}
+
+.Links a:active{
+    background-color: var(--font-color-hover);
 }
