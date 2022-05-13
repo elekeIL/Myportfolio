@@ -17,28 +17,28 @@ function Footer() {
                   <Col className='footer-col'>
                       <h4>Lorem ipsum</h4>
                       <ul>
-                          <li><a href='#'>Lorem ipsum</a></li>
-                          <li><a href='#'>Lorem ipsum</a></li>
-                          <li><a href='#'>Lorem ipsum</a></li>
-                          <li><a href='#'>Lorem ipsum</a></li>
+                          <li><a className='a' href='#'>Lorem ipsum</a></li>
+                          <li><a className='a' href='#'>Lorem ipsum</a></li>
+                          <li><a className='a' href='#'>Lorem ipsum</a></li>
+                          <li><a className='a' href='#'>Lorem ipsum</a></li>
                       </ul>
                   </Col>
                   <Col className='footer-col'>
                       <h4>Lorem ipsum</h4>
                       <ul>
-                          <li><a href='#'>Lorem ipsum</a></li>
-                          <li><a href='#'>Lorem ipsum</a></li>
-                          <li><a href='#'>Lorem ipsum</a></li>
-                          <li><a href='#'>Lorem ipsum</a></li>
+                          <li><a className='a' href='#'>Lorem ipsum</a></li>
+                          <li><a className='a' href='#'>Lorem ipsum</a></li>
+                          <li><a className='a' href='#'>Lorem ipsum</a></li>
+                          <li><a className='a' href='#'>Lorem ipsum</a></li>
                       </ul>
                   </Col>
                   <Col className='footer-col'>
                       <h4>Follow me</h4>
                       <div>
-                          <a href='#' id='follow_me'><FacebookIcon/>Lorem ipsum</a>
-                          <a href='#' id='follow_me'><WhatsAppIcon/>Lorem ipsum</a>
-                          <a href='#' id='folow_me'><TwitterIcon/>Lorem ipsum</a>
-                          <a href='#' id='follow_me'><LinkedInIcon/>Lorem ipsum</a>
+                          <a className='a' href='#' id='follow_me'><FacebookIcon/>Lorem ipsum</a>
+                          <a className='a' href='#' id='follow_me'><WhatsAppIcon/>Lorem ipsum</a>
+                          <a className='a' href='#' id='folow_me'><TwitterIcon/>Lorem ipsum</a>
+                          <a className='a' href='#' id='follow_me'><LinkedInIcon/>Lorem ipsum</a>
                       </div>
                   </Col>
          </Row>

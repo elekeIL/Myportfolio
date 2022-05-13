@@ -14,6 +14,21 @@
     transition: 0.7s;
 }
 
+.a1{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+
+    transition: all 0.3s ease;
+}
+
+.a1:hover{
+    color: #ffffff;
+    padding-left: 10px;
+ }
+
 .navbar-light .navbar-nav .nav-link a{
     color: #fff;
     text-decoration: none;
@@ -32,9 +47,12 @@
     filter: invert(1);
 }
 .Links a:hover {
-    background-color: var(--font-color-hover);
+    background-color: #f2a65a ;
     border-radius: 2rem;
     border: 1rem 1rem 1rem 1rem;
+    transform: scale(1.1);
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
 
 .Links a:hover::after{

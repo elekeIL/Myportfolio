@@ -1,43 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;700&family=Monoton&family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Bebas+Neue&family=Cinzel:wght@600&family=Heebo:wght@100;200;300;700&family=Monoton&family=Montserrat:wght@100;400;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,600;1,500;1,600&family=Rubik+Wet+Paint&family=Ubuntu:wght@300;400;700&family=Work+Sans:wght@500&display=swap');
 
 
 #technologies{
-    background-color:var(--light-color);
+    background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 100%);
     padding: 80px 0 0;
+    position: relative;
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    position: relative;
 }
 
 .technologies_container{
-    background-color:var(--light-color);
-    color: var(--nav-color);
+    background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+    background: linear-gradient(-135deg, grey, black 25%, #f2a65a 25% 50%, white 50% 75%, #772f1a 75% 100%);
+    background-blend-mode: lighten;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+.weed{
+position: absolute;
+width: 100%;
+padding: 0 110px;
+height: 30%;
+}
 
-
-.technologies_container .heading h1{
-    font-weight: 500;
-    word-wrap: break-word;
-    color: black;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    padding: 30px 0 0;
-    font-family: 'Monoton' sans-serif;
+.weed1{
+position: absolute;
 
 }
 
-h2{
-    text-align: left;
-    left: 30%;
-    justify-content: left;
-    color: #15744c
+.face{
+    position: absolute;
+    width: 60rem;
+    height: auto;
+    top:-10rem;
+}
+.eye{
+    position: absolute;
+    float: right;
+    margin-right: -20rem;
+    top: 7rem;
+    width: 19vw
+}
+
+.grapes{
+    position: absolute;
+    float: right;
+    left: -5rem;
+    margin-top: -3rem;
+    width: 40vw;
+}
+.grapes1{
+    position: absolute;
+    float: right;
+    left: -5rem;
+    margin-top: 80rem;
+    width: 40vw;
+    height: 30%;
+}
+
+.vine_61{
+    position: absolute;
+    float: right;
+    left: -9rem;
+    margin-top: 120rem;
+    width: 50vw;
+}
+
+
+.grapes3{
+    position: absolute;
+    float: right;
+    width: 30vw;
+    right: -16rem;
+    top: 100rem;  
+}
+
+.vine_5{
+position: absolute;
+float: right;
+width: 30vw;
+right: -10rem;
+top: -0.1rem;
+}
+.vine_6{
+position: absolute;
+float: right;
+width: 30vw;
+right: -10rem;
+top: 50rem;
+}
+#eyes {
+    animation: sun-eyes 2s ease infinite;
+    transform-origin: center;
+    animation-direction: alternate;
+  }
+  
+  @keyframes sun-eyes {
+    0%,50% {
+      transform: translateY(100px, 0)
+    }
+    50.1%,100% {
+      transform: translateY(-350px, 0)
+    }
+  }
+
+.bg_img{
+    position: absolute;
+    width: 550px;
+    height: 400px;
+    float: left;
+    margin-left: -80px;
+
+}
+.technologies_container .tech_heading h1{
+    font-weight: 600;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    text-shadow: 5px 5px 7px rgba(18, 57, 67, 0.99);
+    word-wrap: break-word;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 0;
+    padding: 70px 30px 150px;;
+
+}
+
+.technologies_container .lng h2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 100px;
+    padding: 100px auto;
+    color: white;
+    position: relative;
 }
 
 .tech_cards_container{
@@ -48,37 +149,46 @@ h2{
     max-width: 1100px;
     margin: 16px 0 32px;
     padding-bottom: 50px;
+    position: relative;
 
 }
+
 .techcard{
     width: 15rem;
-    height: 10rem;
+    height: 20rem;
     background-color: var(--font-color);
-    color: #15744c;
+    color: white;
+    background-color: #15744c;
     margin: 10px;
     margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 20px;
+    border: 2px solid var(--nav-color);
+    border-top: 5px solid var(--nav-color);
     border-bottom: 5px solid var(--nav-color);
     transition: all 0.3s ease;
+    position: relative;
 
 }
 
 .tech_icon{
-    height: 70px;
-    background-color:  #15744c ;
+    height: 90px;
+    background-color:  white ;
     color: #15744c;
     border-radius: 50%;
 
 }
 
 .techcard:hover {
-    background-color: #15744c;
-    transform: scale(1.05);
-    color: #ffffff;
+    background-color: #772f1a;
+    height: 21rem;
+    width: 16rem;
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #15744c;
     animation: rotate 1.2s linear infinite;
 }
 

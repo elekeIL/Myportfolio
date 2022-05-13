@@ -1,12 +1,36 @@
 .about_container{
     padding: 80px 0 0;
     min-height: 100vh;
+    background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 100%);
+    position: relative;
+}
+
+.vine{
+    position: absolute;
+    float: left;
+    left: -160px;
+    height: 82%;
+    width: 50%;
+    transform:rotate(348deg)
+}
+
+.vine1{
+    position: absolute;
+    float: right;
+    right: -70px;
+    transform: rotate(90deg)
 }
 
 .about{
-    background-color: white;
+    background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
     padding-top: 60px;
+    background: linear-gradient(45deg, white 50%,#f2a65a 50%);
+    position: relative;
+
 }
+
 
 
 .section-title{
@@ -20,7 +44,7 @@
     display: inline-block;
     font-size: 30px;
     font-weight: 700;
-    color: black;
+    color: white;
     text-transform: uppercase;
     margin: 0;
 }
@@ -30,12 +54,12 @@
     display: block;
     font-size: 16px;
     font-weight: 600;
-    color: pink
+    color: green
 }
 
 .outer-shadow{
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid #f2a65a;
     border-radius: 10%;
     box-shadow: 50% black;
 }
@@ -59,7 +83,6 @@ max-width: 40%;
 .about_container .about-img .social-links{
     margin-top: 20px;
     text-align: center;
-    background-color: #f1f1f1
 }
 
 .about_container .about-img .social-links a{
@@ -70,13 +93,14 @@ max-width: 40%;
     border-radius: 30%;
     font-size: 16px;
     line-height: 40px;
-    background-color: #f1f1f1;
+    background-color: #f2a65a;
+    color: green;
     box-shadow: 0 5px 15px -5px #00000070;
     position: relative;
 }
 
 .about_container .about-img .social-links a:hover{
-    background-color: blue;
+    background-color: green;
 }
 
 #Icon{
@@ -86,7 +110,7 @@ max-width: 40%;
 }
 
 #Icon:hover{
-transform: scale(1.3);
+transform: scale(1.2);
 color: #f1f1f1;
 }
 
@@ -111,7 +135,7 @@ text-align: left;
 font-size: 16px;
 line-height: 26px;
 margin-bottom: 15px;
-color: grey;
+color: white;
 }
 
 .about_container .about-info span{
@@ -123,11 +147,11 @@ font-weight: 600;
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    color: blue;
+    color: white;
 }
 
 .about_container .about-info a:hover{
-    color: #f1f1f1;
+    color: green;
 }
 
 #btn-resume{
@@ -138,14 +162,15 @@ font-weight: 600;
     font-weight: 600;
     text-align: center;
     line-height: 50px;
-    color: blue;
-    border: 1px solid blue;
-    border-radius: 40%;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 50px;
     transition: all 0.5s;
 }
 
 #btn-resume:hover{
-    background-color: blue;
+    background-color: #f2a65a;
+    transform: scale(1.2);
     animation: shake 0.3s linear 1;
 }
 
@@ -211,11 +236,11 @@ color: pink;
 
 .about_container .timeline::before{
     content: '';
-    width: 10px;
+    width: 8px;
     height: 100%;
     left: 50%;
     top: 0;
-    background-color: black;
+    background-color: #15744c;
     position: absolute;
 }
 
@@ -224,7 +249,7 @@ color: pink;
     max-width: 100%;
     text-align: left;
     justify-content: center;
-    color: grey
+    color: black
 }
 
 .about_container .timeline .timeline-item:nth-child(odd){
@@ -236,8 +261,9 @@ color: pink;
 }
 .about_container .timeline .timeline-item-inner{
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 20px;
     position: relative;
+    background-color: #15744c;
 }
 
 .about_container .timeline .timeline-item-inner::before{
@@ -248,6 +274,10 @@ color: pink;
     background-color: red;
     top: 37px;
     z-index: -1;
+}
+
+.about_container .timeline .timeline-item:nth-child(odd) .timeline-item-inner{
+    background-color: #15744c;
 }
 .about_container .timeline .timeline-item:nth-child(odd) .timeline-item-inner::before{
 right: -30px;
@@ -279,7 +309,7 @@ left: -30px;
 
 .about_container .timeline .timeline-item-inner span{
 font-weight: 500;
-color: pink;
+color: white;
 display: block;
 margin: 0 0 10px;
 text-transform: capitalize;
@@ -287,7 +317,7 @@ text-transform: capitalize;
 
 .about_container .timeline .timeline-item-inner h3{
 font-size: 20px;
-color: grey;
+color: white;
 font-weight: 600;
 margin: 0 0 5px;
 text-transform: capitalize;
@@ -296,13 +326,13 @@ text-transform: capitalize;
 .about_container .timeline .timeline-item-inner h4{
 font-size: 16px;
 font-style: italic;
-color: grey;
+color: white;
 margin: 0;
 }
 
 .about_container .timeline .timeline-item-inner p{
     font-size: 16px;
-    color: grey;
+    color: white;
     line-height: 26px;
     margin: 15px 0 0;
 }

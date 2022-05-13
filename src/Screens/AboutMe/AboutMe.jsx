@@ -9,6 +9,8 @@ import person from '../../Images/person.png'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Resume from './Resume.pdf'
+import vines1 from '../../Images/vines1.png'
+import vines2 from '../../Images/vines2.png'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -61,7 +63,10 @@ function AboutMe() {
   return (
     <div className='about_container' id='about-me'>
     <Navigation />
+    <img className='vine' src={vines1} alt='vines'/>
+    <img className='vine1' src={vines2} alt='vines'/>
       <Container className='about'>
+      <div className='layer layer1'>
         <Row>
           <div className='section-title'>
             <h2 data-heading='main info'>About Me</h2>
@@ -73,7 +78,7 @@ function AboutMe() {
               <img src={person} className='outershadow' alt='profile pic' />
             </div>
             <div className='social-links'>
-              <a href='https://twitter.com/IheanyiEleke' target='blank' alt='twitter'><TwitterIcon id="Icon" fontSize="large" /></a>
+              <a href='https://twitter.com/IheanyiEleke' target='blank' alt='twitter'><TwitterIcon id="Icon" fontSize="large" color='orange'/></a>
               <a href='https://www.facebook.com/lawrence.eleke/' target='blank' alt='Facebook'><FacebookIcon id="Icon" /></a>
               <a href='https://www.linkedin.com/in/iheanyi-eleke/' target='blank' alt='linkedin'><LinkedInIcon id="Icon" /></a>
               <a href='https://api.whatsapp.com/send?phone=2347051156720' target='blank' alt='Whatsapp'><WhatsAppIcon id="Icon" /></a>
@@ -157,6 +162,7 @@ function AboutMe() {
         </Row>
       </TabPanel>
         </Row>
+        </div>
       </Container>
       <Footer/>
     </div>

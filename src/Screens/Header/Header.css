@@ -1,8 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@600&family=Heebo:wght@100;200;300;700&family=Monoton&family=Montserrat:wght@100;400;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,600;1,500;1,600&family=Ubuntu:wght@300;400;700&display=swap');
+
 .po_container{
-    background-color: var(--light-color);
+    
+    background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+    position: relative;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 50px;
     min-height: 100vh;
+    width: 100%
+}
+
+.pulse::before, .pulse::after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid white;
+    animation: pulsing 1.5s linear infinite;
+    border-radius: 50px;
+}
+
+.pulse::after{
+  animation-delay: 1.5s linear infinite;
+}
+
+@keyframes pulsing{
+    0% { transform: scale(0.5); opacity: 0;}
+    50% { transform: scale(1); opacity: 1;}
+    0% { transform: scale(1.2); opacity: 0;}
+
+}
+#grass{
+    position: absolute;
+    margin-top: 100px;
+    left: 10;
+    transform: rotate(-270deg);
+    width: 300px;
+    height: 300px;
+    right: 390px;
+    
+}
+
+#tropics{
+
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    float: left;
+    left: 200px;
+    
+    
+    }
+    #tropics1{
+    
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    float: right;
+    right: 200px;
+    
+    
+    }
+
+
+#grass1{
+   width: 400px;
+   height: 380px;
+   display: block;
+   float: right;
+   left: 300px;
+   position: absolute;
+   margin-top: 108px;
+    }
+    
+#greentea{
+   width: 600px;
+   height: 600px;
+   transform: rotate(330deg);
+   display: block;
+   position: absolute;
+   top: -125px;
+   left: -34px;
+}
+#flower{
+   width: 400px;
+   height: 400px;
+   transform: rotate(70deg);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#Background{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .effect-wrap .effect{
@@ -28,38 +124,101 @@
 
 .po_container .welcome_text{
     line-height: 15px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
 }
 .po_container .welcome_text p{
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
     text-transform: capitalize;
-    text-align: center;
-    padding: 15px;
-    margin: 0;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    height: 100%;
+    line-height: 1.5;
+}
+
+.po_container .welcome_text h2{
+     text-align: left;
+     color: #ffffff;
+     padding-left: 20px;
 }
 
 .po_container .welcome-info .more-info, .po_container .welcome-info .get-offer{
     flex: 0 0 50%;
     max-width: 50%;
-    padding: 220px 30px;
+    padding: 100px 0px;
     text-align: center;
 }
 
 .po_container .welcome-info .more-info p{
     text-align: left;
+    color: #ffffff;
+    padding-right: 30px;
 }
+
 
 .po_container .welcome-info .get-offer p{
     text-align: left;
+    color: #ffffff;
+    padding-right: 30px;
 }
 
 .po_container .welcome-info .more-info Button{
     background-color: #15744c;
     color: #ffffff;
+    margin-top: 35px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.po_container .welcome-info .more-info Button a{
+    text-decoration: none;
+    color: white;
+}
+.click::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;;
+    width: 100%;
+    background-color: #f2a65a;
+    transform: translateX(100%);
+    transition: all 1s;
 }
 
+.click:hover::before{
+    transform:translateX(0);
+    z-index: -1;
+}
+.click:hover{
+    color:green;
+    font-size: 18px;
+    padding-left: 10px;
+}
 .po_container .welcome-info .get-offer Button{
     background-color: #15744c;
     color: #ffffff;
+    border-radius: 50px;
+}
+
+.po_container .welcome-info .get-offer Button a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    transition: all 0.5s ease;
+}
+
+.intouch:hover{
+    background-color: #f2a65a;
+    color: green;
+    border-radius: 50px;
+    transform: scale(1.4)
 }
 
 .po_container .welcome_text h2{
@@ -68,40 +227,87 @@
     color: black;
     padding: 15px;
     margin: 0;
+    width: 100%;
+    height: 100%
 
 }
  .po_container .welcome-img, .po_container .welcome-info{
    flex: 0 0 50%;
    max-width: 50%; 
-   padding: 50px 15px;
+   padding: 50px 20px;
 }
 
 .po_container .welcome-info{
-    background-color: var(--light-color);
+    background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
     padding-top: 9rem;
+    max-width: auto;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 50px 40px;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.po_container .welcome-info h3{
+    text-transform: capitalize;
+    font-size: 40px;
+    padding: 0 0 70px 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px 2px #000;
+
 }
 
 .po_container .welcome-img .welcome-box{
-    background-color: var(--light-color);
+    background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
     max-width: 450px;
     display: block;
     margin: auto;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     border-radius: 50%;
-    padding: 15px
 }
 
 .po_container .welcome-img .welcome-box img{
     width: 130%;
     border-radius: 50%;
     border: 5px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
 .heading{
-    font-size: 5rem;
+    font-size: 80px;
+    color: #ffffff;
     text-shadow: 2px 2px #000;
+    text-align: left;
     margin-bottom: 10rem;
     font-weight: 1000;
+    padding-left: 50px;
+    padding-top: 200px;
+    text-shadow: 0 1px 0 #efefef
+                 0 2px 0 #efefef,
+                 0 3px 0 #efefef,
+                 0 4px 0 #efefef,
+                 0 30px 5px rgba(0,0,0,.1);
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    gap: 10px;
+                 
+    animation: float 3s linear;
+    animation-direction: alternate;
+    animation-delay: 0;
+}
+
+@keyframes float {
+    from { transform: rotate(5deg);}
+
+    to {transform: rotate(-5deg);}
 }
 
 .po_container .service-heading h2{
@@ -109,7 +315,7 @@
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
-    color: #000;
+    color: #ffffff;
     padding-top: 30px;
 }
 
@@ -201,4 +407,39 @@
 .service-containment .service-box:hover .content{
     transform: scale(1);
     transition-delay: 0.25s;
+}
+
+@media (min-width: 322px) and (max-width:700px){
+    .po_container{
+        max-width: 100%;
+    }
+    .po_container .welcome-img{
+        flex: 0 0 30%;
+        max-width: 30%; 
+        padding: 50px 20px;
+     }
+
+     .po_container .welcome-info{
+        flex: 0 0 70%;
+        max-width: 70%; 
+        padding: 50px 20px;
+     }
+    .po_container .welcome-info .more-info, .po_container .welcome-info .get-offer{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 50px 0px;
+        text-align: center;
+    }
+    .po_container .welcome-img .welcome-box img{
+        width: 130%;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        height: 100%;
+    }
+    #grass{
+        position: absolute;
+        float: right;
+        transform: rotate(-90deg);
+        padding: 120px;
+    }
 }
